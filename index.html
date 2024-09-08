@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estabelecendo relacoes com outros documentos -->
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh+oOVwVFGiASaqT+leoXJgBJx30jZeTsimonDsfRlY19+jtUCOmGmPmq+CyVuaooj4G+z2UtA/5EpbVBV|/g=="   
+ crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+ 
+   <!-- Nome da pagina -->
+    <title>Nolan-movie-findr</title>
+</head>
+<body>
+    <!-- Titulo central da pagina -->
+    <header>
+        <h1>Onde essa cena foi filmada?_</h1>
+    </header>
+    <h2>Christopher Nolan Edition</h2>
+    
+    <main>
+        <!-- Sessao de busca -->
+        <section>
+            <input type="text" placeholder="Digite aqui seu filme favorito do Nolan ou clique no marcador no mapa" id="campo-pesquisa">
+            <button onclick="pesquisar()" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Pesquisar</button>
+
+        </section>
+        <div class="map">
+            <div id="map" style="width: 100%; height: 300px;">
+        </div>
+
+        </div>
+        <div class ="resultados-pesquisa" id = "resultados-pesquisa">
+        </div>
+
+    </main>
+    <footer>
+        <p>
+            Por Isis Botelho. Todos os direitos reservados. 2024.
+        </p>
+    </footer>
+    
+
+    <!-- Criando relacao com demais scripts -->
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+    <script src="leaflet.js"></script>
+    <script src="mapa-filme.js"></script>
+    
+
+</body>
+</html>

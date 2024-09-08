@@ -1,0 +1,260 @@
+/* Importar fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+main{
+    width: 50rem;
+}
+/* Estiliza o corpo da página */
+body {
+    font-family: 'Didact Gothic'; /* Define a fonte padrão */
+    background-image: url('images/background-main-page.jpg'); /*imagem importada de "https://www.freepik.com/free-photo/film-stripes-with-film-reel-dark-backdrop_4822404.htm#fromView=search&page=1&position=34&uuid=a91cff7e-dab1-4787-8c2d-57f4a36bb542"*/
+    background-size:cover; /*cobrir a pagina com a imagem*/
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+
+/* Estiliza o header*/
+
+header {
+    padding-top: 5rem; /* Adiciona 50 pixels de espaço acima do conteúdo */
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-family: 'League Spartan';
+    font-size: 3rem;  /* Tamanho da fonte */
+    color: #161F22; /* Cor do texto */
+    background-color: #FFFFFF;/* Cor do fundo do texto*/
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    margin-bottom: 0.5rem;/* AJuste de espacamento entre os titulos*/
+    margin-top: auto;
+    padding: 1.0rem;
+}
+
+/* Estiliza os títulos h2 */
+h2 {
+    margin-top: 0.5rem;
+    font-family: 'League Spartan';
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #FFFFFF; /* Cor do texto */
+    background-color:  #000000;
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    padding: 0.8rem;
+}
+
+/* Estiliza as seções da página */
+section {
+    color: #222831;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 20px; /* Espaçamento abaixo de cada seção */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    font-family: 'League Spartan';
+    width: 31rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 0.625rem; /* Espaçamento interno */
+    border: 1px solid #ccc;
+    border-right: none;
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.625rem 1.250rem;
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /*Borda arredondada */
+    background-color: #161F22; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-family: 'League Spartan';
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-bottom: 1rem;
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+section button:hover {
+    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+.mapa {
+
+    width: 80rem; /* Ajuste da largura do mapa*/
+    
+}
+
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 30rem; /* Largura máxima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1rem; /* Borda arredondada */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; 
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+/* Estiliza cada item da caixa de resultados da pesquisa */
+.item-resultado {
+    align-self: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-top: 20px;
+    padding: 50px;
+    display: grid; /* Usa grid para layout */
+	grid-template-columns: repeat(3, 1fr); 
+	grid-auto-rows: auto;
+    gap: 20px;
+    margin-top: 20px;
+    min-height: 710px;
+}
+
+/* Estiliza o titulo h2 para cada item da caixa de resultados da pesquisa */
+.item-resultado h2 {
+    background-color: #161F22;
+    color: white;
+    padding: 8px;
+    margin-top: auto;
+    border-radius: 1.5rem;
+    font-size: 24px;
+    grid-column: span 3;
+    gap: 10px;
+}
+
+/* Estiliza a classe conteudo para cada item da caixa de resultados da pesquisa */
+.conteudo {
+	grid-row: 2;
+    grid-column: span 3;
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 100px;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estiliza a imagem da cena*/
+.imagem-cena {
+    grid-column: 1 / span 2;
+    grid-row: 1/ 4;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Estiliza o texto exibido no item de cada resultado*/
+.text{
+    display: grid;
+    grid-column: span 2;
+    grid-row: 4;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 10px;
+    max-width: 800px;
+    margin-bottom: 20px;
+
+}
+
+/* Estiliza o texto referente a cena, principalmente para definicao de layout*/
+.cena{
+    grid-column-end: span 3;
+    margin-bottom: 10px;
+}
+
+/* Estiliza o texto tags h3 nos resultados*/
+.text h3 {
+    margin: 1px 0;
+}
+
+/* Estiliza o texto tags p nos resultados*/
+.text p {
+    margin: 0;
+}
+
+
+
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: fixed; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+    }
+
+    section input {
+        width: 25rem; /* Largura dos inputs em telas menores */
+        padding: 0.8rem; /* Espaçamento interno em telas menores */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados em telas menores */
+        height: 40vh; /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+    }
+
+    section input {
+        width: 17rem; /* Largura total dos inputs em telas pequenas */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+    }
+
+    .resultados-pesquisa {
+        width: 90%; /* Largura da caixa de resultados em telas pequenas */
+        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+    }
+
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+    }
+
+    footer {
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+}
